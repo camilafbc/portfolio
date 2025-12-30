@@ -2,33 +2,12 @@
 
 import { motion } from "motion/react";
 import { fadeIn } from "@/lib/animation";
-import { Card, CardContent } from "../ui/card";
 import Link from "next/link";
-import Image from "next/image";
-import { CardStack } from "./card-stack";
-import { IconCard } from "./icon-card";
+import { IconCard } from "../IconCard";
+import { contactLinks } from "@/data/data";
 
 export const Contact = () => {
-  const contactLinks = [
-    {
-      name: "GitHub",
-      icon: "/icons/github.svg",
-      href: "https://github.com/camilafbc",
-      label: "Visite meu perfil no GitHub",
-    },
-    {
-      name: "LinkedIn",
-      icon: "/icons/linkedin.svg",
-      href: "https://linkedin.com/in/camilafbcoelho",
-      label: "Conecte-se comigo no LinkedIn",
-    },
-    {
-      name: "E-mail",
-      icon: "/icons/gmail.svg",
-      href: "mailto:camilafernanda914@gmail.com",
-      label: "Envie um e-mail",
-    },
-  ];
+  const contactList = contactLinks;
 
   return (
     <section
@@ -53,7 +32,7 @@ export const Contact = () => {
         </motion.div>
 
         <div className="flex flex-wrap items-center justify-center gap-6 max-w-4xl mx-auto">
-          {contactLinks.map((link, index) => (
+          {contactList.map((link, index) => (
             <motion.div
               key={index}
               variants={fadeIn("up", 0.3 + index * 0.1)}

@@ -1,4 +1,4 @@
-import { IconCard } from "./icon-card";
+import { IconCard } from "../IconCard";
 
 type CardStackProps = {
   title: string;
@@ -9,7 +9,7 @@ type CardStackProps = {
   }[];
 };
 
-export const CardStack = ({ data, title, subtitle }: CardStackProps) => {
+export const StackCard = ({ data, title, subtitle }: CardStackProps) => {
   return (
     <div className="w-full max-w-4xl mx-auto">
       <div className="lg:text-2xl font-semibold mb-2 text-foreground text-xl text-center">

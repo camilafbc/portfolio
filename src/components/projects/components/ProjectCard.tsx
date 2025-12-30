@@ -1,6 +1,10 @@
-import { image } from "motion/react-client";
-import { AnimatedTooltip } from "../ui/animated-tooltip";
-import { Card, CardContent, CardDescription, CardHeader } from "../ui/card";
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+} from "@/components/ui/card";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 

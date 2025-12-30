@@ -1,10 +1,10 @@
 "use client";
 
 import { Download, Loader2Icon } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 import { useState } from "react";
 
-export const ButtonDownload = () => {
+export const DownloadBtn = () => {
   const [disabled, setDisabled] = useState<boolean>(false);
 
   const handleDownloadBtn = () => {

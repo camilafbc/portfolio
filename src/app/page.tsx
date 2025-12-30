@@ -1,12 +1,10 @@
-import { Contact } from "@/components/my-components/contact";
-import { Hero } from "@/components/my-components/hero";
-import { Projects } from "@/components/my-components/projects";
-import { Sobre } from "@/components/my-components/sobre";
-import { Tech } from "@/components/my-components/tech";
-import { CometCard } from "@/components/ui/comet-card";
+import { Contact } from "@/components/contact/Contact";
+import { Hero } from "@/components/hero/Hero";
+import { Projects } from "@/components/projects/projects";
+import { Sobre } from "@/components/sobre/Sobre";
+import { Tech } from "@/components/tech/Tech";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { navItems } from "@/data/data";
-import Image from "next/image";
 
 export default function Home() {
   return (

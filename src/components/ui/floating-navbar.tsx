@@ -6,8 +6,9 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
-import { cn, handleScroll } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { handleScroll } from "@/utils/utils";
 // import { link } from "fs";
 
 export const FloatingNav = ({
@@ -41,16 +42,6 @@ export const FloatingNav = ({
       }
     }
   });
-
-  // const handleScroll = (
-  //   e: React.MouseEvent<HTMLAnchorElement>,
-  //   link: string
-  // ) => {
-  //   e.preventDefault();
-  //   document
-  //     .getElementById(link.startsWith("#") ? link.substring(1) : link)
-  //     ?.scrollIntoView({ behavior: "smooth" });
-  // };
 
   return (
     <AnimatePresence mode="wait">

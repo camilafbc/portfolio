@@ -1,7 +1,7 @@
 "use client";
 
 import { projectsData } from "@/data/data";
-import { ProjectCard } from "./project-card";
+import { ProjectCard } from "./components/ProjectCard";
 import { motion } from "motion/react";
 import { fadeIn } from "@/lib/animation";
 

@@ -137,3 +137,24 @@ export const projectsData = [
     stacks: ["TypeScript", "React", "Next.js", "TailwindCSS"],
   },
 ];
+
+export const contactLinks = [
+  {
+    name: "GitHub",
+    icon: "/icons/github.svg",
+    href: "https://github.com/camilafbc",
+    label: "Visite meu perfil no GitHub",
+  },
+  {
+    name: "LinkedIn",
+    icon: "/icons/linkedin.svg",
+    href: "https://linkedin.com/in/camilafbcoelho",
+    label: "Conecte-se comigo no LinkedIn",
+  },
+  {
+    name: "E-mail",
+    icon: "/icons/gmail.svg",
+    href: "mailto:camilafernanda914@gmail.com",
+    label: "Envie um e-mail",
+  },
+];

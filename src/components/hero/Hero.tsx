@@ -1,21 +1,22 @@
 "use client";
 
-import { cn, handleScroll } from "@/lib/utils";
-import { TextGenerateEffect } from "../ui/text-generate-effect";
-import { HoverBorderGradient } from "../ui/hover-border-gradient";
+import { cn } from "@/lib/utils";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import Link from "next/link";
 import { Navigation } from "lucide-react";
 import { motion } from "motion/react";
 import { fadeIn } from "@/lib/animation";
+import { handleScroll } from "@/utils/utils";
 
 export const Hero = () => {
   return (
-    // 1. O fundo principal da seção
+    // fundo principal
     <div
       className="relative flex min-h-dvh w-full items-center justify-center bg-background"
       id="home"
     >
-      {/* 2. O Grid (Linhas) */}
+      {/* 2. grid  */}
       <div
         className={cn(
           "absolute inset-0",
@@ -24,12 +25,10 @@ export const Hero = () => {
         )}
       />
 
-      {/* 3. MÁSCARA RADIAL + FADE INFERIOR */}
-      {/* Alteramos o bg para ser IGUAL ao container e usamos um gradiente linear no mask para sumir embaixo */}
+      {/* máscara radial e fade inferior */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background-secondary [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black_90%),linear-gradient(to_bottom,transparent_90%,black)]"></div>
 
-      {/* 4. GRADIENTE DE TRANSIÇÃO (O "Embaçado" final) */}
-      {/* Isso garante que as linhas sumam completamente antes da próxima div */}
+      {/* gradiente inferior de transição */}
       <div className="absolute bottom-0 left-0 h-[20vh] w-full bg-gradient-to-t from-background-secondary to-transparent z-10" />
 
       <div className="relative z-20 flex flex-col items-center justify-center gap-4 px-6">

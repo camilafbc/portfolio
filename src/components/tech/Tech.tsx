@@ -1,9 +1,9 @@
 "use client";
 
 import { stacks } from "@/data/data";
-import { CardStack } from "./card-stack";
 import { motion } from "motion/react";
 import { fadeIn } from "@/lib/animation";
+import { StackCard } from "./StackCard";
 
 export const Tech = () => {
   const data = stacks;
@@ -35,7 +35,7 @@ export const Tech = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <CardStack title="Front-end" data={data.frontend} />
+            <StackCard title="Front-end" data={data.frontend} />
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.4)}
@@ -43,7 +43,7 @@ export const Tech = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <CardStack title="Back-end e Banco de Dados" data={data.backend} />
+            <StackCard title="Back-end e Banco de Dados" data={data.backend} />
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.5)}
@@ -51,7 +51,7 @@ export const Tech = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <CardStack
+            <StackCard
               title="Outras"
               subtitle="Linguagens com as quais tive contato acadêmico e em projetos durante minha formação técnica e superior"
               data={data.others}

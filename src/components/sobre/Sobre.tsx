@@ -5,10 +5,10 @@ import { Card, CardContent, CardTitle } from "../ui/card";
 import { Briefcase } from "lucide-react";
 import { aboutData } from "@/data/data";
 import Link from "next/link";
-import { ButtonDownload } from "./button-download";
 import { motion } from "motion/react";
 import { fadeIn } from "@/lib/animation";
-import { handleScroll } from "@/lib/utils";
+import { handleScroll } from "@/utils/utils";
+import { DownloadBtn } from "../DownloadBtn";
 
 export const Sobre = () => {
   const data = aboutData;
@@ -110,7 +110,7 @@ export const Sobre = () => {
                       </li>
                     ))}
                   </ul>
-                  <ButtonDownload />
+                  <DownloadBtn />
                 </CardContent>
               </Card>
             </div>

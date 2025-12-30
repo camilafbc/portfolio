@@ -4,7 +4,7 @@ export const fadeIn = (
   direction: "up" | "down" | "left" | "right" = "up",
   delay = 0
 ): Variants => {
-  const offset = 40; // Aumentado de 24 para 40 para um efeito mais perceptível
+  const offset = 40;
 
   const axis = {
     up: { y: offset },
@@ -25,7 +25,7 @@ export const fadeIn = (
       transition: {
         duration: 0.8,
         delay,
-        ease: [0.25, 0.46, 0.45, 0.94], // Easing mais suave e natural
+        ease: [0.25, 0.46, 0.45, 0.94],
       },
     },
   };
