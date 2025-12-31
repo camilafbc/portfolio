@@ -7,15 +7,27 @@ import { useState } from "react";
 export const DownloadBtn = () => {
   const [disabled, setDisabled] = useState<boolean>(false);
 
-  const handleDownloadBtn = () => {
+  const handleDownloadBtn = async () => {
     setDisabled(true);
-    const link = document.createElement("a");
-    link.href = "/curriculo.pdf";
-    link.download = "Curriculo_Camila_F_B_Coelho.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    setDisabled(false);
+
+    try {
+      const response = await fetch("/curriculo.pdf");
+      const blob = await response.blob();
+      const fileURL = URL.createObjectURL(blob);
+
+      const link = document.createElement("a");
+      link.href = fileURL;
+      link.download = "Curriculo_Camila_F_B_Coelho.pdf";
+      document.body.appendChild(link);
+      link.click();
+
+      document.body.removeChild(link);
+      URL.revokeObjectURL(fileURL);
+    } catch (error) {
+      console.error("Erro: " + error);
+    } finally {
+      setDisabled(false);
+    }
   };
 
   return (
