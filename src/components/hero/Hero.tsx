@@ -36,7 +36,7 @@ export const Hero = () => {
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           animate="visible"
-          className="text-center text-sm md:text-lg md:tracking-wider lg:text-2xl text-foreground"
+          className="text-center text-base md:text-lg md:tracking-wider lg:text-2xl text-foreground"
         >
           Oi! Eu sou a Camila,
         </motion.p>

@@ -9,7 +9,7 @@ type CardStackProps = {
   }[];
 };
 
-export const StackCard = ({ data, title, subtitle }: CardStackProps) => {
+export const StacksLine = ({ data, title, subtitle }: CardStackProps) => {
   return (
     <div className="w-full max-w-4xl mx-auto">
       <div className="lg:text-2xl font-semibold mb-2 text-foreground text-xl text-center">
@@ -17,7 +17,7 @@ export const StackCard = ({ data, title, subtitle }: CardStackProps) => {
       </div>
 
       {subtitle && (
-        <div className="text-xs lg:text-sm text-center text-foreground-muted mb-6">
+        <div className="text-sm lg:text-sm text-center text-foreground-muted mb-6">
           {subtitle}
         </div>
       )}

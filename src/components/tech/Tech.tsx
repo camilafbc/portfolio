@@ -3,7 +3,7 @@
 import { stacks } from "@/data/data";
 import { motion } from "motion/react";
 import { fadeIn } from "@/lib/animation";
-import { StackCard } from "./StackCard";
+import { StacksLine } from "./StacksLine";
 
 export const Tech = () => {
   const data = stacks;
@@ -23,7 +23,7 @@ export const Tech = () => {
           <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-space text-foreground">
             Tecnologias
           </h2>
-          <p className="text-center mb-12 text-foreground-muted max-w-2xl mx-auto text-xs lg:text-lg">
+          <p className="text-center mb-12 text-foreground-muted max-w-2xl mx-auto text-sm lg:text-lg">
             Tecnologias que utilizo e com as quais tenho familiaridade para o
             desenvolvimento de projetos web
           </p>
@@ -35,7 +35,7 @@ export const Tech = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <StackCard title="Front-end" data={data.frontend} />
+            <StacksLine title="Front-end" data={data.frontend} />
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.4)}
@@ -43,7 +43,7 @@ export const Tech = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <StackCard title="Back-end e Banco de Dados" data={data.backend} />
+            <StacksLine title="Back-end e Banco de Dados" data={data.backend} />
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.5)}
@@ -51,7 +51,7 @@ export const Tech = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <StackCard
+            <StacksLine
               title="Outras"
               subtitle="Linguagens com as quais tive contato acadêmico e em projetos durante minha formação técnica e superior"
               data={data.others}

@@ -38,7 +38,9 @@ export const ProjectCard = ({
             className="w-full h-auto rounded-md"
           />
         </div>
-        <CardHeader className="pl-0 lg:text-xl font-bold">{title}</CardHeader>
+        <CardHeader className="pl-0 text-lg lg:text-xl font-bold pb-2">
+          {title}
+        </CardHeader>
         <CardDescription className="lg:text-base">
           {description}
         </CardDescription>

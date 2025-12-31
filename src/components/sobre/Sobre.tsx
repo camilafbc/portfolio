@@ -38,7 +38,7 @@ export const Sobre = () => {
             viewport={{ once: true, amount: 0.4 }}
           >
             <div className="flex-1 space-y-6 text-foreground ">
-              <p className="text-justify text-sm lg:text-lg leading-relaxed font-light max-w-xl mx-auto">
+              <p className="text-justify text-base lg:text-lg leading-relaxed font-light max-w-xl mx-auto">
                 Minha jornada na tecnologia começou durante uma transição de
                 carreira, quando encontrei no desenvolvimento um espaço onde
                 curiosidade, lógica e criatividade caminham juntas. Comecei pelo
