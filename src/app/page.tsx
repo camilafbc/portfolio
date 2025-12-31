@@ -1,4 +1,5 @@
 import { Contact } from "@/components/contact/Contact";
+import { Footer } from "@/components/footer/Footer";
 import { Hero } from "@/components/hero/Hero";
 import { Projects } from "@/components/projects/projects";
 import { Sobre } from "@/components/sobre/Sobre";
@@ -15,9 +16,7 @@ export default function Home() {
       <Tech />
       <Projects />
       <Contact />
-      <footer className="w-full p-6 text-sm bg-background-secondary text-foreground-muted text-center border-t-2 border-border">
-        — feito com 💜 e código —
-      </footer>
+      <Footer />
     </div>
   );
 }
