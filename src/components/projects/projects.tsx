@@ -23,7 +23,7 @@ export const Projects = () => {
           <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-space text-foreground">
             Projetos
           </h2>
-          <p className="mb-8 text-foreground-muted max-w-2xl text-center text-sm lg:text-lg">
+          <p className="mb-8 text-foreground-muted max-w-2xl text-center text-sm lg:text-lg mx-auto">
             Alguns dos projetos que desenvolvi, demonstrando minhas habilidades
             e experiência em desenvolvimento web
           </p>
