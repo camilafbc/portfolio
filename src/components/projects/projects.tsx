@@ -1,9 +1,9 @@
 "use client";
 
-import { projectsData } from "@/data/data";
 import { ProjectCard } from "./components/ProjectCard";
 import { motion } from "motion/react";
 import { fadeIn } from "@/lib/animation";
+import { projectsData } from "@/data/projects-data";
 
 export const Projects = () => {
   const projects = projectsData;
@@ -20,13 +20,13 @@ export const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-space text-foreground">
+          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-space text-foreground mb-8">
             Projetos
           </h2>
-          <p className="mb-8 text-foreground-muted max-w-2xl text-center text-sm lg:text-lg mx-auto">
+          {/* <p className="mb-8 text-foreground-muted max-w-2xl text-center text-sm lg:text-lg mx-auto">
             Alguns dos projetos que desenvolvi, demonstrando minhas habilidades
             e experiência em desenvolvimento web
-          </p>
+          </p> */}
         </motion.div>
         <div className="flex  items-center justify-center flex-wrap gap-8">
           {projects.map((item, index) => (

@@ -118,26 +118,6 @@ export const stacks = {
   ],
 };
 
-export const projectsData = [
-  {
-    title: "Controle de Estoque",
-    description: "dohfhufdohfsodfhds dsfh sdhfs0idfh sidshf0si h0s fsdhf",
-    image:
-      "https://raw.githubusercontent.com/camilafbc/controle-estoque/refs/heads/main/to_readme.jpeg",
-    link: "https://github.com/camilafbc/controle-estoque",
-    stacks: ["TypeScript", "React", "Next.js", "TailwindCSS"],
-  },
-  {
-    title: "Controle de Estoque",
-    description:
-      "dohfhufdohfsodfhds dsfh sdhfs0idfh sidshf0si h0s fsdhf dohfhufdohfsodfhds dsfh sdhfs0idfh sidshf0si h0s fsdhf",
-    image:
-      "https://raw.githubusercontent.com/camilafbc/controle-estoque/refs/heads/main/to_readme.jpeg",
-    link: "https://github.com/camilafbc/controle-estoque",
-    stacks: ["TypeScript", "React", "Next.js", "TailwindCSS"],
-  },
-];
-
 export const contactLinks = [
   {
     name: "GitHub",

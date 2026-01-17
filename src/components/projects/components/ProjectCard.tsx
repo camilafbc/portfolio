@@ -41,7 +41,7 @@ export const ProjectCard = ({
         <CardHeader className="pl-0 text-lg lg:text-xl font-bold pb-2">
           {title}
         </CardHeader>
-        <CardDescription className="lg:text-base">
+        <CardDescription className="lg:text-base text-justify min-h-[100px] line-clamp-4">
           {description}
         </CardDescription>
       </CardHeader>
