@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Meu Portfólio Profissional
 
-## Getting Started
+Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido para apresentar minha trajetória como Desenvolvedora Full Stack Júnior e os projetos que venho construindo.
 
-First, run the development server:
+👉 ACESSO: https://camilafbc.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologias utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Framework:** Next.js
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**UI:** Aceternity UI, Shadcn e Tailwind
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Funcionalidades
 
-## Learn More
+- Interface Moderna: Uso de efeitos visuais e glows interativos;
 
-To learn more about Next.js, take a look at the following resources:
+- Navegação Inteligente: scroll suave via funções utilitárias para melhor UX;
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Download de Currículo: download via fetch para garantir feedback visual ao usuário;
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Responsividade: adaptado para dispositivos móveis utilizando unidades dinâmicas como dvh;
 
-## Deploy on Vercel
+- Analytics Integrado: monitoramento de acessos através do Vercel Analytics.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Como rodar o projeto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone o repositório
+2. Instale as dependências: `npm install`
+3. Execute o projeto: `npm run dev`
+
+## 🎯 Objetivo Profissional
+
+Atualmente atuo na Criare Tecnologia, onde evoluí de estagiária para Desenvolvedora Júnior. Meu foco é contribuir para projetos que demandem desafios técnicos reais, aplicando práticas de código limpo e organização.
