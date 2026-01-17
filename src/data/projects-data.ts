@@ -4,7 +4,7 @@ export const projectsData = [
     description:
       "Aplicação desenvolvida para apresentar minha trajetória como desenvolvedora e projetos que venho construindo.",
     image:
-      "https://raw.githubusercontent.com/camilafbc/controle-estoque/refs/heads/main/to_readme.png",
+      "https://raw.githubusercontent.com/camilafbc/portfolio/refs/heads/main/to_readme.png",
     link: "https://github.com/camilafbc/portfolio",
     stacks: ["TypeScript", "Next.js", "TailwindCSS"],
   },

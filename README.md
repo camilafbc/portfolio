@@ -2,7 +2,7 @@
 
 Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido para apresentar minha trajetória como Desenvolvedora Full Stack Júnior e os projetos que venho construindo.
 
-<img width="100%" src="https://raw.githubusercontent.com/camilafbc/controle-estoque/refs/heads/main/to_readme.jpeg"/>
+<img width="100%" src="https://raw.githubusercontent.com/camilafbc/portfolio/refs/heads/main/to_readme.png"/>
 
 👉 ACESSO: https://camilafbc.vercel.app/
 
