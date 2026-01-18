@@ -11,7 +11,7 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 flex flex-col items-center px-6 bg-background-tertiary w-full min-h-dvh text-foreground"
+      className="py-20 flex flex-col items-center justify-center px-6 bg-background-tertiary w-full min-h-dvh text-foreground"
     >
       <div className="container">
         <motion.div
@@ -20,13 +20,13 @@ export const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-space text-foreground mb-8">
+          <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold  font-space text-foreground mb-4">
             Projetos
           </h2>
-          {/* <p className="mb-8 text-foreground-muted max-w-2xl text-center text-sm lg:text-lg mx-auto">
+          <p className="text-foreground-muted max-w-2xl text-center text-sm lg:text-lg mx-auto mb-16">
             Alguns dos projetos que desenvolvi, demonstrando minhas habilidades
             e experiência em desenvolvimento web
-          </p> */}
+          </p>
         </motion.div>
         <div className="flex  items-center justify-center flex-wrap gap-8">
           {projects.map((item, index) => (
