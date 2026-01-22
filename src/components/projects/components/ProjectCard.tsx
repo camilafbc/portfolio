@@ -26,7 +26,7 @@ export const ProjectCard = ({
   const teste = ["TypeScript", "React", "Next.js", "TailwindCSS"];
 
   return (
-    <Card className="hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 max-w-lg">
+    <Card className="hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 max-w-md select-none">
       <CardHeader>
         <div className="w-full max-w-[500px]">
           <img
@@ -35,7 +35,7 @@ export const ProjectCard = ({
             width={0}
             height={0}
             sizes="100vh"
-            className="w-full h-[300px] rounded-md object-cover"
+            className="w-full h-[200px] rounded-md object-fill"
           />
         </div>
         <CardHeader className="pl-0 text-lg lg:text-xl font-bold pb-2">
