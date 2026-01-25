@@ -26,44 +26,42 @@ export const ProjectCard = ({
   const teste = ["TypeScript", "React", "Next.js", "TailwindCSS"];
 
   return (
-    <Card className="hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 max-w-md select-none">
-      <CardHeader>
-        <div className="w-full max-w-[500px]">
-          <img
-            src={image}
-            alt={"Imagem " + title}
-            width={0}
-            height={0}
-            sizes="100vh"
-            className="w-full h-[200px] rounded-md object-fill"
-          />
-        </div>
-        <CardHeader className="pl-0 text-lg lg:text-xl font-bold pb-2">
-          {title}
+    <Link href={link} target="blank">
+      <Card className="hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 max-w-md select-none">
+        <CardHeader>
+          <div className="w-full max-w-[500px]">
+            <img
+              src={image}
+              alt={"Imagem " + title}
+              width={0}
+              height={0}
+              sizes="100vh"
+              className="w-full h-[200px] rounded-md object-fill"
+            />
+          </div>
+          <CardHeader className="pl-0 text-lg lg:text-xl font-bold pb-2">
+            {title}
+          </CardHeader>
+          <CardDescription className="lg:text-base text-justify min-h-[100px] line-clamp-4">
+            {description}
+          </CardDescription>
         </CardHeader>
-        <CardDescription className="lg:text-base text-justify min-h-[100px] line-clamp-4">
-          {description}
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
-        <div className="flex flex-row items-start w-full">
-          <AnimatedTooltip
-            items={stacks.map((item, index) => ({
-              id: index,
-              name: item,
-              designation: "",
-              image: `/icons/${item}.svg`,
-            }))}
-          />
-        </div>
-        <Link
-          href={link}
-          target="blank"
-          className="flex items-center whitespace-nowrap text-primary text-sm"
-        >
-          Ver mais <ArrowUpRight className="ml-2 size-4" />
-        </Link>
-      </CardContent>
-    </Card>
+        <CardContent className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
+          <div className="flex flex-row items-start w-full">
+            <AnimatedTooltip
+              items={stacks.map((item, index) => ({
+                id: index,
+                name: item,
+                designation: "",
+                image: `/icons/${item}.svg`,
+              }))}
+            />
+          </div>
+          <div className="flex items-center whitespace-nowrap text-primary text-sm">
+            Ver mais <ArrowUpRight className="ml-2 size-4" />
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
   );
 };

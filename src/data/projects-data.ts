@@ -6,7 +6,15 @@ export const projectsData = [
     image:
       "https://raw.githubusercontent.com/camilafbc/controle-estoque/refs/heads/main/to_readme.jpeg",
     link: "https://github.com/camilafbc/controle-estoque",
-    stacks: ["TypeScript", "React", "Next.js", "TailwindCSS"],
+    stacks: ["TypeScript", "Prisma", "React", "Next.js", "TailwindCSS"],
+  },
+  {
+    title: "BeWear - E-commerce",
+    description:
+      "Plataforma de e-commerce moderna e completa com listagem de produtos, navegação entre categorias, checkout e confirmação de pagamento com Stripe.",
+    image: "/projects/bewear-ecommerce.jpeg",
+    link: "https://github.com/camilafbc/next-bewear-bootcamp",
+    stacks: ["TypeScript", "React", "Next.js", "Drizzle", "TailwindCSS"],
   },
   {
     title: "WhatsApp Web Clone",
