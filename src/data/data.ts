@@ -115,6 +115,14 @@ export const stacks = {
       name: "Python",
       icon: "/icons/Python.svg",
     },
+    {
+      name: "Drizzle",
+      icon: "/icons/Drizzle.svg",
+    },
+    {
+      name: "Firebase",
+      icon: "/icons/Firebase.svg",
+    },
   ],
 };
 
