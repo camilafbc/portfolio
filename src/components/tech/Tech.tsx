@@ -24,8 +24,8 @@ export const Tech = () => {
             Tecnologias
           </h2>
           <p className="text-center mb-12 text-foreground-muted max-w-2xl mx-auto text-sm lg:text-lg">
-            Tecnologias que utilizo e com as quais tenho familiaridade para o
-            desenvolvimento de projetos web
+            Ferramentas e tecnologias que utilizo em projetos e continuo
+            aprofundando no dia a dia
           </p>
         </motion.div>
         <div className="flex flex-col items-center justify-center gap-12">
@@ -51,11 +51,7 @@ export const Tech = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <StacksLine
-              title="Outras"
-              subtitle="Linguagens com as quais tive contato acadêmico e em projetos durante minha formação técnica e superior"
-              data={data.others}
-            />
+            <StacksLine title="Ferramentas & Utilitários" data={data.devops} />
           </motion.div>
         </div>
       </div>

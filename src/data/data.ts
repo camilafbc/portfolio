@@ -102,6 +102,12 @@ export const stacks = {
       icon: "/icons/PostgresSQL.svg",
     },
   ],
+  devops: [
+    {
+      name: "Git",
+      icon: "/icons/Git.svg",
+    },
+  ],
   others: [
     {
       name: "PHP",
