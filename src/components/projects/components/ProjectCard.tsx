@@ -23,20 +23,18 @@ export const ProjectCard = ({
   link,
   stacks,
 }: ProjectCardProps) => {
-  const teste = ["TypeScript", "React", "Next.js", "TailwindCSS"];
-
   return (
-    <Link href={link} target="blank">
+    <Link href={link} target="blank" rel="noopener noreferrer">
       <Card className="hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 max-w-md select-none">
         <CardHeader>
-          <div className="w-full max-w-[500px]">
+          <div className="w-full max-w-[450px]">
             <img
               src={image}
               alt={"Imagem " + title}
               width={0}
               height={0}
               sizes="100vh"
-              className="w-full h-[200px] rounded-md object-fill"
+              className="w-full h-[200px] rounded-md object-cover"
             />
           </div>
           <CardHeader className="pl-0 text-lg lg:text-xl font-bold pb-2">

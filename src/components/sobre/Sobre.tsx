@@ -39,22 +39,21 @@ export const Sobre = () => {
           >
             <div className="flex-1 space-y-6 text-foreground ">
               <p className="text-justify text-base lg:text-lg leading-relaxed font-light max-w-xl mx-auto">
-                Minha jornada na tecnologia começou durante uma transição de
-                carreira, quando encontrei no desenvolvimento um espaço onde
-                curiosidade, lógica e criatividade caminham juntas. Comecei pelo
-                Front-end, mas logo percebi que entender apenas a superfície não
-                era suficiente.
+                Minha jornada na tecnologia começou em uma transição de
+                carreira, onde descobri que o desenvolvimento é o lugar onde
+                minha curiosidade e lógica se encontram. O que começou no
+                Front-end evoluiu naturalmente para o Full Stack, movido pelo
+                desejo de entender e construir o ciclo completo de uma
+                aplicação.
                 <br />
                 <br />
-                Hoje, busco uma visão mais completa do desenvolvimento, cuidando
-                tanto da experiência no Front quanto da estrutura no Back-end.
-                No dia a dia, priorizo código claro, organizado e fácil de
-                manter, sempre aberta a aprender e evoluir.
+                Hoje, foco em criar soluções completas, sempre em um aprendizado
+                contínuo como pede a tecnologia.
                 <br />
                 <br />
-                Fora do código, gosto de música, shows, filmes e de planejar
-                viagens. Se quiser trocar ideias sobre tecnologia ou projetos,
-                fico feliz em me{" "}
+                Fora das linhas de código, sou movida por música, shows, filmes
+                e a organização da próxima viagem. Se você gosta de trocar
+                ideias sobre tecnologia ou novos projetos, vamos nos{" "}
                 <Link
                   href={"#contact"}
                   onClick={(e) => handleScroll(e, "#contact")}
@@ -62,7 +61,7 @@ export const Sobre = () => {
                 >
                   conectar
                 </Link>
-                .
+                !
               </p>
             </div>
           </motion.div>

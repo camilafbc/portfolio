@@ -12,6 +12,10 @@ export const navItems = [
     link: "#stacks",
   },
   {
+    name: "Aprendizado",
+    link: "#aprendizado",
+  },
+  {
     name: "Projetos",
     link: "#projects",
   },
@@ -100,6 +104,12 @@ export const stacks = {
     {
       name: "Postgre SQL",
       icon: "/icons/PostgresSQL.svg",
+    },
+  ],
+  devops: [
+    {
+      name: "Git",
+      icon: "/icons/Git.svg",
     },
   ],
   others: [
