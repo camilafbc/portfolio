@@ -12,6 +12,10 @@ export const navItems = [
     link: "#stacks",
   },
   {
+    name: "Aprendizado",
+    link: "#aprendizado",
+  },
+  {
     name: "Projetos",
     link: "#projects",
   },
