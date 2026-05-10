@@ -3,7 +3,8 @@
 import { learning } from "@/data/learning-data";
 import { motion } from "motion/react";
 import { fadeIn } from "@/lib/animation";
-import { ScrollText } from "lucide-react";
+import { ArrowUpRight, ScrollText, SquareArrowOutUpRight } from "lucide-react";
+import Link from "next/link";
 
 export const Learning = () => {
   const entries = learning;
@@ -75,6 +76,16 @@ export const Learning = () => {
                         <h3 className="text-base md:text-md font-semibold leading-snug text-foreground">
                           {item.title}
                         </h3>
+                        {item.link && (
+                          <Link
+                            href={item.link}
+                            target="blank"
+                            rel="noopener noreferrer"
+                            className="-ml-1.5"
+                          >
+                            <SquareArrowOutUpRight className="size-3 text-primary" />
+                          </Link>
+                        )}
                       </div>
                       <p className="pb-2 max-w-none text-sm leading-relaxed text-foreground-muted">
                         {item.description}
