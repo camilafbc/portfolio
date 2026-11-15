@@ -8,10 +8,6 @@ export const navItems = [
     link: "#sobre",
   },
   {
-    name: "Tecnologias",
-    link: "#stacks",
-  },
-  {
     name: "Aprendizado",
     link: "#aprendizado",
   },
@@ -34,8 +30,8 @@ export const aboutData = [
   {
     title: "Unilavras",
     subtitle:
-      "Curso Superior Técnológico em Análise e Desenvolvimento de Sistemas",
-    date: "2025 - atual",
+      "Curso Superior Tecnológico em Análise e Desenvolvimento de Sistemas",
+    date: "Conclusão em 2026",
   },
   {
     title: "Criare Tecnologia",
@@ -48,93 +44,6 @@ export const aboutData = [
     date: "2023 - 2024",
   },
 ];
-
-export const stacks = {
-  frontend: [
-    {
-      name: "HTML",
-      icon: "/icons/HTML5.svg",
-    },
-    {
-      name: "CSS",
-      icon: "/icons/CSS3.svg",
-    },
-    {
-      name: "Sass",
-      icon: "/icons/Sass.svg",
-    },
-    {
-      name: "Tailwind CSS",
-      icon: "/icons/TailwindCSS.svg",
-    },
-    {
-      name: "React",
-      icon: "/icons/React.svg",
-    },
-    {
-      name: "Next",
-      icon: "/icons/Next.js.svg",
-    },
-  ],
-  backend: [
-    {
-      name: "JavaScript",
-      icon: "/icons/JavaScript.svg",
-    },
-    {
-      name: "TypeScript",
-      icon: "/icons/TypeScript.svg",
-    },
-    {
-      name: "Node.js",
-      icon: "/icons/Node.js.svg",
-    },
-    {
-      name: "Prisma",
-      icon: "/icons/Prisma.svg",
-    },
-    {
-      name: "SQLite",
-      icon: "/icons/SQLite.svg",
-    },
-    {
-      name: "MySQL",
-      icon: "/icons/MySQL.svg",
-    },
-    {
-      name: "Postgre SQL",
-      icon: "/icons/PostgresSQL.svg",
-    },
-  ],
-  devops: [
-    {
-      name: "Git",
-      icon: "/icons/Git.svg",
-    },
-  ],
-  others: [
-    {
-      name: "PHP",
-      icon: "/icons/PHP.svg",
-    },
-    {
-      name: "C#",
-      icon: "/icons/CSharp.svg",
-    },
-    {
-      name: "Python",
-      icon: "/icons/Python.svg",
-    },
-    {
-      name: "Drizzle",
-      icon: "/icons/Drizzle.svg",
-    },
-    {
-      name: "Firebase",
-      icon: "/icons/Firebase.svg",
-    },
-  ],
-};
 
 export const contactLinks = [
   {

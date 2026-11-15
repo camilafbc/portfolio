@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import Link from "next/link";
-import { Navigation } from "lucide-react";
+import { Mail, Navigation } from "lucide-react";
 import { motion } from "motion/react";
 import { fadeIn } from "@/lib/animation";
 import { handleScroll } from "@/utils/utils";
@@ -66,16 +66,26 @@ export const Hero = () => {
           initial="hidden"
           animate="visible"
         >
-          <HoverBorderGradient>
+          <div className="flex flex-col items-center gap-4 sm:flex-row">
+            <HoverBorderGradient>
+              <Link
+                href={"#projects"}
+                onClick={(e) => handleScroll(e, "#projects")}
+                className="flex items-center justify-center gap-2 w-52"
+              >
+                <Navigation className="size-4 mr-2" />
+                Ver Projetos
+              </Link>
+            </HoverBorderGradient>
             <Link
-              href={"#projects"}
-              onClick={(e) => handleScroll(e, "#projects")}
-              className="flex items-center justify-center gap-2 w-52"
+              href={"#contact"}
+              onClick={(e) => handleScroll(e, "#contact")}
+              className="flex w-52 items-center justify-center gap-2 rounded-full border border-border px-4 py-2 text-sm text-foreground transition-colors hover:border-primary/50 hover:text-primary"
             >
-              <Navigation className="size-4 mr-2" />
-              Ver Projetos
+              <Mail className="size-4 mr-2" />
+              Entrar em contato
             </Link>
-          </HoverBorderGradient>
+          </div>
         </motion.div>
       </div>
     </div>
