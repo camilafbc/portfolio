@@ -3,7 +3,7 @@
 import { learning } from "@/data/learning-data";
 import { motion } from "motion/react";
 import { fadeIn } from "@/lib/animation";
-import { ArrowUpRight, ScrollText, SquareArrowOutUpRight } from "lucide-react";
+import { ScrollText, SquareArrowOutUpRight } from "lucide-react";
 import Link from "next/link";
 
 export const Learning = () => {
@@ -12,7 +12,7 @@ export const Learning = () => {
   return (
     <section
       id="aprendizado"
-      className="py-20 flex flex-col items-center justify-center px-6 bg-background-secondary w-full min-h-dvh text-foreground"
+      className="py-20 flex flex-col items-center justify-center px-6 bg-background w-full min-h-dvh text-foreground"
     >
       <div className="container">
         <motion.div
@@ -79,7 +79,8 @@ export const Learning = () => {
                         {item.link && (
                           <Link
                             href={item.link}
-                            target="blank"
+                            target="_blank"
+                            aria-label={`Abrir ${item.title}`}
                             rel="noopener noreferrer"
                             className="-ml-1.5"
                           >

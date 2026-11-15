@@ -28,7 +28,7 @@ export const Projects = () => {
             e experiência em desenvolvimento web
           </p>
         </motion.div>
-        <div className="flex  items-center justify-center flex-wrap gap-8">
+        <div className="flex items-stretch justify-center flex-wrap gap-8">
           {projects.map((item, index) => (
             <motion.div
               key={index}
@@ -36,14 +36,9 @@ export const Projects = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
+              className="h-full"
             >
-              <ProjectCard
-                title={item.title}
-                description={item.description}
-                image={item.image}
-                link={item.link}
-                stacks={item.stacks}
-              />
+              <ProjectCard {...item} />
             </motion.div>
           ))}
         </div>

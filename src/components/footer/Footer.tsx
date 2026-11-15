@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="w-full p-6 text-sm bg-background-secondary text-foreground-muted text-center border-t-2 border-border">
+    <footer className="w-full p-6 pb-28 md:pb-6 text-sm bg-background-secondary text-foreground-muted text-center border-t-2 border-border">
       — feito com 💜 e{" "}
       <Link
         href={"https://github.com/camilafbc/portfolio"}

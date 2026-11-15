@@ -16,7 +16,7 @@ Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvid
 
 - Interface Moderna: Uso de efeitos visuais e glows interativos;
 
-- Navegação Inteligente: scroll suave via funções utilitárias para melhor UX;
+- Navegação Inteligente: scroll suave via funções utilitárias; navbar flutuante no desktop e barra inferior com ícones no mobile;
 
 - Download de Currículo: download via fetch para garantir feedback visual ao usuário;
 

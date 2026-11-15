@@ -1,36 +1,51 @@
-export const projectsData = [
+export type Project = {
+  title: string;
+  description: string;
+  /** Caminho em /public ou URL. Opcional: sem imagem, o card mostra um placeholder. */
+  image?: string;
+  /** Repositório no GitHub */
+  link: string;
+  /** Link da aplicação no ar (opcional) */
+  demo?: string;
+  /** Nomes que correspondem a /public/icons/<nome>.svg */
+  stacks: string[];
+};
+
+export const projectsData: Project[] = [
+  {
+    title: "Líber - Gerenciador de Leituras",
+    description:
+      "Aplicação full stack para organizar estantes de leitura, buscar livros no Google Books e acompanhar o progresso de páginas lidas. Conta com autenticação (JWT e Google OAuth), testes de integração, Docker e CI/CD.",
+    image: "/projects/liber.png",
+    link: "https://github.com/camilafbc/full-liber-gerenciador-de-leituras",
+    demo: "https://my-liber.vercel.app/",
+    stacks: [
+      "TypeScript",
+      "Next.js",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Jest",
+    ],
+  },
+  {
+    title: "PlanejAI",
+    description:
+      "Aplicação para planejamento de metas financeiras que usa IA (Gemini) para gerar diagnóstico e sugestões personalizadas a partir de renda, despesas e dívidas, com histórico de simulações.",
+    image: "/projects/planejai.jpeg",
+    link: "https://github.com/camilafbc/react-planejai",
+    demo: "https://react-planejai.vercel.app/",
+    stacks: ["TypeScript", "React", "Vite", "TailwindCSS", "Gemini"],
+  },
   {
     title: "Controle de Estoque",
     description:
-      "Sistema full-stack para controle de insumos e consumo de produtos por turma, desenvolvido para atender demandas reais dos cursos de Estética e Cabeleireiro do SENAC MG.",
-    image:
-      "https://raw.githubusercontent.com/camilafbc/controle-estoque/refs/heads/main/to_readme.jpeg",
+      "Sistema de controle de estoque para os cursos do SENAC, com movimentações por turma, relatórios analíticos e controle de acesso por perfil e curso. Projeto integrador do curso técnico, em uso real.",
+    image: "/projects/controle-estoque.png",
     link: "https://github.com/camilafbc/controle-estoque",
-    stacks: ["TypeScript", "Prisma", "React", "Next.js", "TailwindCSS"],
-  },
-  {
-    title: "BeWear - E-commerce",
-    description:
-      "Plataforma de e-commerce moderna e completa com listagem de produtos, navegação entre categorias, checkout e confirmação de pagamento com Stripe.",
-    image: "/projects/bewear-ecommerce.jpeg",
-    link: "https://github.com/camilafbc/next-bewear-bootcamp",
-    stacks: ["TypeScript", "React", "Next.js", "Drizzle", "TailwindCSS"],
-  },
-  {
-    title: "WhatsApp Web Clone",
-    description:
-      "Aplicação de mensagens instantâneas que explora conceitos de comunicação bidirecional e estilização condicional.",
-    image: "/projects/whatsapp-clone.jpeg",
-    link: "https://github.com/camilafbc/react-whatsapp-web-clone",
-    stacks: ["TypeScript", "React", "TailwindCSS", "Firebase"],
-  },
-  {
-    title: "Portfólio Profissional",
-    description:
-      "Aplicação desenvolvida para apresentar minha trajetória como desenvolvedora e projetos que venho construindo.",
-    image:
-      "https://raw.githubusercontent.com/camilafbc/portfolio/refs/heads/main/to_readme.png",
-    link: "https://github.com/camilafbc/portfolio",
-    stacks: ["TypeScript", "Next.js", "TailwindCSS"],
+    demo: "https://estoque-senac.vercel.app/",
+    stacks: ["TypeScript", "Next.js", "React", "Prisma", "PostgreSQL", "TailwindCSS"],
   },
 ];

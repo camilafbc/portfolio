@@ -7,6 +7,40 @@ export type LearningEntry = {
 
 export const learning: LearningEntry[] = [
   {
+    date: "novembro/26",
+    title: "docker",
+    description:
+      "conceitos, Dockerfile, comandos e boas práticas; criação de imagens e containers, aplicados no ambiente do Líber com Docker Compose",
+    link: "https://github.com/camilafbc/full-liber-gerenciador-de-leituras",
+  },
+  {
+    date: "setembro/26",
+    title: "vibe coding",
+    description:
+      "bootcamp de desenvolvimento com o Lovable, que resultou em 2 projetos",
+  },
+  {
+    date: "agosto/26",
+    title: "ci/cd",
+    description:
+      "o que é CI/CD, Git Flow, GitHub Actions e pipelines com testes, lint e deploy automatizado",
+    link: "https://github.com/camilafbc/full-liber-gerenciador-de-leituras",
+  },
+  {
+    date: "julho/26",
+    title: "llm em aplicações",
+    description:
+      "integração com a API do Gemini através de uma Serverless Function, mantendo a chave protegida, no PlanejAI",
+    link: "https://github.com/camilafbc/react-planejai",
+  },
+  {
+    date: "junho/26",
+    title: "fundamentos de arquitetura de sistemas",
+    description:
+      "visão geral, casos de uso, idempotência, estrutura de pastas, inversão de dependências, máquina de estados e validação, aplicados em uma arquitetura modular por features",
+    link: "https://github.com/camilafbc/full-liber-gerenciador-de-leituras",
+  },
+  {
     date: "maio/26",
     title: "web socket",
     description:
